@@ -1,16 +1,4 @@
-const scroller = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    lerp: 0.03, 
-    multiplier: 1.4, 
-    reloadOnContextChange: true,
-    touchMultiplier: 2,
-    smoothMobile: 0,
-    smartphone: {
-        smooth: !0,
-        breakpoint: 767
-    },
-})
+
 
 function openMenu(){
     document.querySelector("#menu-pannel").style.left = "0%"
@@ -73,27 +61,49 @@ document.querySelector("body").addEventListener("mousemove", function(dets){
    document.querySelector("#lar").style. transform= `translate(${X}px, ${Y}px)`
 })
 
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.registerPlugin(ScrollTrigger);
+const locoScroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true,
+    lerp: 0.03, // Linear Interpolation, 0 > 1 // Try 0.01
+    multiplier: 1.4, // Effect Multiplier
+    reloadOnContextChange: true,
+    touchMultiplier: 2,
+    smoothMobile: 0,
+    smartphone: {
+        smooth: !0,
+        breakpoint: 767
+    },
+})
 
-// scroller.on("scroll", ScrollTrigger.update);
 
+// // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+// locoScroll.on("scroll", ScrollTrigger.update);
+
+// // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
 // ScrollTrigger.scrollerProxy("#main", {
-//     scrollTop(value) {
-//       return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-//     }, 
-//     getBoundingClientRect() {
-//       return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-//     },
-//     pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-//   });
-  
-//   gsap.from(".foot-elm", {
+//   scrollTop(value) {
+//     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+//   }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+//   getBoundingClientRect() {
+//     return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+//   },
+//   // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+//   pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+// });
+
+// const tl = gsap.timeline({
 //     scrollTrigger: {
 //       trigger: "#footer",
-//       scroller: "#main",
+//       start: "center bottom",
+//       end: "center top",
 //       scrub: true,
-//       start: "top 60%",
-//       y: "-20px",
-//       opacity: 0
-//     }})
+//       markers: true
+//     }
+//   });
+
+//   tl.from(".fadin",{
+//       y: 30,
+//       opacity: 0,
+//   })

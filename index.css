@@ -1,41 +1,41 @@
 @font-face{
   font-family: gilroy-regular;
-  src: url(/fonts/Gilroy-Regular.otf);
+  src: url(fonts/Gilroy-Regular.otf);
 }
 
 @font-face{
   font-family: gilroy-medium;
-  src: url(/fonts/Gilroy-Medium.otf);
+  src: url(fonts/Gilroy-Medium.otf);
 }
 
 @font-face{
   font-family: gilroy-light;
-  src: url(/fonts/Gilroy-Light.otf);
+  src: url(fonts/Gilroy-Light.otf);
 }
 
 @font-face{
   font-family: gilroy-semibold;
-  src: url(/fonts/Gilroy-Semibold.otf);
+  src: url(fonts/Gilroy-Semibold.otf);
 }
 
 @font-face{
   font-family: gilroy-heavy;
-  src: url(/fonts/Gilroy-Heavy.otf);
+  src: url(fonts/Gilroy-Heavy.otf);
 }
 
 @font-face{
   font-family: gilroy-thin;
-  src: url(/fonts/Gilroy-Thin.otf);
+  src: url(fonts/Gilroy-Thin.otf);
 }
 
 @font-face{
   font-family: voyage-regular;
-  src: url(/fonts/Voyage-Regular.ttf);
+  src: url(fonts/Voyage-Regular.ttf);
 }
 
 @font-face{
   font-family: voyage-bold;
-  src: url(/fonts/Voyage-Bold.ttf);
+  src: url(fonts/Voyage-Bold.ttf);
 }
 
 * {

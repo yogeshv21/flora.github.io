@@ -744,6 +744,11 @@ a, button{
   #menu-pannel{
     font-size: 8px;
   }
+  
+  
+  #menu-pannel #lft{
+    justify-content: initial;
+  }
 
   #menu-pannel #lft{
     width: 100%;
@@ -763,7 +768,7 @@ a, button{
 
   #menu-pannel i{
     left: 50%;
-    bottom: 10%;
+    bottom: 19%;
     transform: translate(-50%, 0);
   }
 

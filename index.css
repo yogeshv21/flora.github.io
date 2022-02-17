@@ -1,3 +1,43 @@
+@font-face{
+  font-family: gilroy-regular;
+  src: url(/fonts/Gilroy-Regular.otf);
+}
+
+@font-face{
+  font-family: gilroy-medium;
+  src: url(/fonts/Gilroy-Medium.otf);
+}
+
+@font-face{
+  font-family: gilroy-light;
+  src: url(/fonts/Gilroy-Light.otf);
+}
+
+@font-face{
+  font-family: gilroy-semibold;
+  src: url(/fonts/Gilroy-Semibold.otf);
+}
+
+@font-face{
+  font-family: gilroy-heavy;
+  src: url(/fonts/Gilroy-Heavy.otf);
+}
+
+@font-face{
+  font-family: gilroy-thin;
+  src: url(/fonts/Gilroy-Thin.otf);
+}
+
+@font-face{
+  font-family: voyage-regular;
+  src: url(/fonts/Voyage-Regular.ttf);
+}
+
+@font-face{
+  font-family: voyage-bold;
+  src: url(/fonts/Voyage-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,18 +75,6 @@ a, button{
   background-color: #fa7e7e;
 }
 
-/* #lar{
-  position: absolute;
-  z-index: 999;
-  height: 20px;
-  width: 20px;
-  border-radius: 100px;
-  background-color: white;
-  will-change: transform;
-  transition: all .1s;
-  display: none;
-} */
-
 #main #hero {
   position: relative;
   padding: 0 4.5em;
@@ -66,7 +94,7 @@ a, button{
 
 #nav #nlft h1 {
   font-size: 27px;
-  font-family: voyage;
+  font-family:voyage-regular;
   color: white;
   font-weight: 600;
 }
@@ -79,10 +107,11 @@ a, button{
 #nav #nrgt a {
   font-size: 14px;
   color: white;
-  font-family: voyage;
+  font-family: voyage-regular;
   text-decoration: none;
   margin-right: 2.35em;
   font-weight: 600;
+  letter-spacing: .1em;
 }
 
 #nav #nrgt i {
@@ -169,7 +198,7 @@ a, button{
 
 #lft .link h1{
   font-size: 70px;
-  font-family: voyage;
+  font-family: voyage-regular;
   letter-spacing:  0.014em;
   font-weight: 500;
   color: #fa7e7e;
@@ -216,7 +245,7 @@ a, button{
   position: relative;
   z-index: 9;
   color: white;
-  font-family: voyage;
+  font-family: voyage-regular;
   font-weight: 100;
   font-size: 230px;
   letter-spacing: 0.01em;
@@ -226,7 +255,7 @@ a, button{
   position: relative;
   z-index: 7;
   color: white;
-  font-family: voyage;
+  font-family: voyage-regular;
   font-weight: 100;
   font-size: 230px;
   margin-left: 0.13em;
@@ -236,7 +265,7 @@ a, button{
 #hero p {
   position: relative;
   top: 12%;
-  font-family: gilroy;
+  font-family: gilroy-regular;
   color: white;
   width: 33%;
   font-size: 15px;
@@ -288,7 +317,7 @@ a, button{
 
 #twodots #txt2 h1 {
   font-size: 50px;
-  font-family: voyage;
+  font-family: voyage-regular;
   color: white;
   font-weight: 200;
 }
@@ -310,7 +339,7 @@ a, button{
 #twodots #dots p:nth-child(2){
   position: absolute;
   right: 0.625px;
-  font-family: voyage;
+  font-family: voyage-regular;
 }
 
 #main #magth {
@@ -344,7 +373,7 @@ a, button{
 }
 
 #magth-txt h2 {
-  font-family: voyage;
+  font-family: voyage-regular;
   font-size: 120px;
   font-weight: 100;
   line-height: 0.5em;
@@ -359,10 +388,10 @@ a, button{
 }
 
 #magth-txt h1 {
-  font-family: voyage;
+  font-family: voyage-regular;
   font-size: 160px;
   line-height: 0.81em;
-  font-weight: 700;
+  font-weight: 500;
   margin-left: 0.12em;
   margin-top: 0.12em;
 }
@@ -385,7 +414,7 @@ a, button{
 }
 
 #magth-txt #circle h3 {
-  font-family: voyage;
+  font-family: voyage-regular;
   font-size: 2.5em;
   font-weight: 200;
 }
@@ -399,14 +428,14 @@ a, button{
 }
 
 #vase-series h3 {
-  font-family: voyage;
+  font-family: voyage-regular;
   color: white;
   font-size: 30px;
 }
 
 #vase-series p {
   color: white;
-  font-family: gilroy;
+  font-family: gilroy-regular;
   font-size: 15px;
   letter-spacing: o.066em;
   font-weight: 600;
@@ -426,7 +455,7 @@ a, button{
 #prod-showcase h1 {
   color: white;
   font-size: 60px;
-  font-family: voyage;
+  font-family: voyage-regular;
   font-weight: 100;
   letter-spacing: 0.016em;
   line-height: 1em;
@@ -477,13 +506,13 @@ a, button{
 
 #footer #txt1 p{
    font-size: 18px;
-   font-family: gilroy;
+   font-family: gilroy-regular;
    font-weight: 500;
    color: #333333;
 }
 
 #footer #txt1 h2{
-  font-family: voyage;
+  font-family: voyage-regular;
   font-weight: 500;
   color: #EC192A;
   font-size: 90px;
@@ -506,7 +535,7 @@ a, button{
 
 #footer #txt2 #p3{
   width: 25%;
-  font-family: gilroy;
+  font-family: gilroy-regular;
   font-weight: 500;
   color: #EC192A;
   letter-spacing: .027em;
@@ -515,7 +544,7 @@ a, button{
 
 #footer h1{
   font-size: 150px;
-  font-family: voyage;
+  font-family: voyage-regular;
   font-weight: 400;
   color: #EC192A;
   margin-top: .3em;
